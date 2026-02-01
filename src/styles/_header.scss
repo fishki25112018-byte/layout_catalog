@@ -4,16 +4,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
-  background-color: #fff;
+  padding: 0 $spacing-large;
+  background-color: $color-white;
 }
 
-.logo__img {
-  width: 40px;
-  height: 40px;
+.logo {
   display: block;
-}
 
+  &__img {
+    width: $logo-size;
+    height: $logo-size;
+    display: block;
+  }
+}
 .nav__list {
   display: flex;
   list-style: none;

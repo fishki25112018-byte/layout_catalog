@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px;
+  margin: $spacing-md;
 
   &__list {
     display: flex;
@@ -13,7 +13,7 @@
   &__star {
     width: $star-size;
     height: $star-size;
-    margin-right: 4px;
+    margin-right: $spacing-xs;
     background: url('../images/star.svg') center / contain no-repeat;
   }
 
@@ -26,7 +26,7 @@
   }
 
   &__reviews {
-    font-size: 10px;
+    font-size: $font-size-sm;
     color: $color-main;
   }
 }

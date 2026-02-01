@@ -2,7 +2,7 @@
 
 .card {
   width: $card-width;
-  background-color: #fff;
+  background-color: $color-white;
   border: 1px solid $color-border;
   border-radius: $card-radius;
   display: flex;
@@ -11,7 +11,7 @@
   transform-origin: center;
 
   &__title {
-    margin: 40px 16px 0;
+    margin: 40px $spacing-md 0;
     font-size: 12px;
     color: $color-main;
     transition: color $transition;
@@ -19,9 +19,9 @@
     &::after {
       content: 'Product code: 195434';
       display: block;
-      font-size: 10px;
+      font-size: $font-size-sm;
       color: $color-secondary;
-      margin-top: 4px;
+      margin-top: $spacing-xs;
     }
   }
 
@@ -53,16 +53,16 @@
 
     &-value {
       font-size: 16px;
-      font-weight: 700;
+      font-weight: bold;
       color: $color-main;
     }
   }
 
   &__button {
-    margin: 16px;
+    margin: $spacing-md;
     height: $button-height;
     background-color: $color-accent;
-    color: #fff;
+    color: $color-white;
     text-decoration: none;
     text-transform: uppercase;
     display: flex;
@@ -73,7 +73,7 @@
     border: 1px solid $color-accent;
 
     &:hover {
-      background-color: #fff;
+      background-color: $color-white;
       color: $color-accent;
     }
   }
