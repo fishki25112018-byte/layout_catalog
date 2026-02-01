@@ -3,7 +3,7 @@
 .card {
   width: $card-width;
   background-color: $color-white;
-  border: 1px solid $color-border;
+  border: $border-width-sm solid $color-border;
   border-radius: $card-radius;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,8 @@
   transform-origin: center;
 
   &__title {
-    margin: 40px $spacing-md 0;
-    font-size: 12px;
+    margin: $spacing-40 $spacing-md 0;
+    font-size: $title-size;
     color: $color-main;
     transition: color $transition;
 
@@ -35,24 +35,24 @@
   }
 
   &__image {
-    width: 160px;
-    height: 134px;
-    margin: 32px auto 0;
+    width: $card-img-width;
+    height: $card-img-height;
+    margin: $spacing-32 auto 0;
     background: url('../images/imac.jpeg') center / cover no-repeat;
   }
 
   &__price {
     display: flex;
     justify-content: space-between;
-    margin: 24px 16px 0;
+    margin: $spacing-24 $spacing-md 0;
 
     &-text {
-      font-size: 12px;
+      font-size: $text-sizex;
       color: $color-secondary;
     }
 
     &-value {
-      font-size: 16px;
+      font-size: $value-size;
       font-weight: bold;
       color: $color-main;
     }
@@ -70,7 +70,7 @@
     justify-content: center;
     border-radius: $card-radius;
     transition: all $transition;
-    border: 1px solid $color-accent;
+    border: $border-width-sm solid $color-accent;
 
     &:hover {
       background-color: $color-white;
