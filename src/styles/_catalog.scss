@@ -8,15 +8,15 @@
   gap: $spacing-46 $spacing-48;
   grid-template-columns: repeat(1, $card-width);
 
-  @media (min-width: $breakpoint-mobile) {
+  @media (min-width: $breakpoint-sm) {
     grid-template-columns: repeat(2, $card-width);
   }
 
-  @media (min-width: $breakpoint-mobile8px) {
+  @media (min-width: $breakpoint-md) {
     grid-template-columns: repeat(3, $card-width);
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-lg) {
     grid-template-columns: repeat(4, $card-width);
   }
 }
